@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+    table, th, td {border: 1px solid black;border-collapse: collapse;}
+    tr:nth-child(even) {background-color: #D6EEEE;}
+    </style>
+</head>
+</head>
+<body>
+
+    <h1>Abilities</h1>
+        {% block content %}
+            <table id="data" class="table table-striped" style="width:50%">
+                <tbody>
+                {% for x in abilities %}
+                    <tr>
+                    <td>{{x}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endblock %}
+
+    <h2><p>Artwork</p></h2>
+    <img src = '{{image}}'>
+<p><a href = ./> Click here to search again.</a></p>
+</body>
+</html>
